@@ -152,6 +152,12 @@ main {
     outline: 2px solid $green-700;
     outline-offset: 2px;
 }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+}
 // Responsive styles tablet
 @media (min-width: $breakpoint-tablet) {
     .card {
@@ -178,4 +184,5 @@ main {
         margin-bottom: 0;
         justify-content: center; 
     }
+
 }
