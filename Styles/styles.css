@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.8556rem + 0.2778vw, 1rem);
+  line-height: 1.6;
+  color: hsl(212, 21%, 14%);
+  background-color: hsl(30, 38%, 92%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 1.3889rem + 1.1111vw, 2rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 1.1667rem + 0.8333vw, 1.75rem);
+}
+
+h3 {
+  font-size: clamp(1.125rem, 1.0833rem + 0.4167vw, 1.375rem);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.card {
+  width: clamp(20rem, 18rem + 6vw, 25rem);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.product-image-mobile {
+  width: 100%;
+  block-size: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.details-section {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.details-section .company-name {
+  font-size: clamp(0.875rem, 0.8556rem + 0.2778vw, 1rem);
+  font-weight: 500;
+  color: hsl(158, 42%, 18%);
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+.details-section .brand-name {
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.5rem, 1.3889rem + 1.1111vw, 2rem);
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  line-height: 1.2;
+}
+.details-section p {
+  font-size: clamp(0.875rem, 0.8556rem + 0.2778vw, 1rem);
+  font-weight: 400;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.8rem;
+  font-family: "Fraunces", serif;
+}
+.price-section .current-price {
+  font-size: clamp(1.5rem, 1.3889rem + 1.1111vw, 2rem);
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.price-section .original-price {
+  font-size: clamp(0.875rem, 0.8556rem + 0.2778vw, 1rem);
+  font-weight: 400;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  height: auto;
+  padding: 0.75rem;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: clamp(0.875rem, 0.8556rem + 0.2778vw, 1rem);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.add-to-cart-button img {
+  width: 1rem;
+  height: auto;
+  margin-right: 0.8rem;
+}
+
+.add-to-cart-button:hover {
+  background-color: hsl(158, 42%, 18%);
+}
+
+.add-to-cart-button:focus {
+  outline: 2px solid hsl(158, 42%, 18%);
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    width: clamp(30rem, 28rem + 10vw, 45rem);
+    height: auto;
+    align-items: stretch;
+  }
+  .product-image-mobile {
+    width: 100%;
+    flex: 1 1 50%;
+    height: auto;
+    min-height: 100%;
+    block-size: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 10px 0 0 10px;
+  }
+  .details-section {
+    flex: 1 1 50%;
+    padding: 2rem;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
