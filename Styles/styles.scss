@@ -73,9 +73,11 @@ main {
     background-color: $White;
 }
 .product-image-mobile{
+    src: ('../images/image-product-mobile.jpg');
     width: 100%;
     block-size: auto;
     object-fit: cover;
+    aspect-ratio: 1 / 1;
     border-radius: 10px 10px 0 0;
 }
 .details-section{
@@ -186,3 +188,4 @@ main {
     }
 
 }
+
